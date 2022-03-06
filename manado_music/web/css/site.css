@@ -1,0 +1,654 @@
+html,
+body {
+    height: 100%;
+}
+#update-active a:link,
+#update-active a:visited,
+#update-active a:hover,
+#update-active a:active
+{
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+#wa-cek-barang a:link,
+#wa-cek-barang a:visited,
+#wa-cek-barang a:hover,
+#wa-cek-barang a:active
+{
+  color: #000000;
+  text-decoration: none;
+}
+#wa-cek-barang{
+  width: 100%;
+  bottom:0;
+  left:0;
+  position: absolute;
+}
+
+.menu-side{
+    position:fixed;
+}
+
+#jumlah-keranjang{
+    text-align:center;
+    font-weight:bold;
+    color:#000eb7;
+    width: 150px;
+    font-size:1.3em;
+}
+#tambah-jumlah{
+    color:#30bf00;
+    text-align:right;
+    font-size:1.5em;
+    margin-left:10px;
+    cursor:pointer;
+}
+#kurang-jumlah{
+    text-align:left;
+    font-size:1.5em;
+    color:#30bf00;
+    margin-left:10px;
+    margin-right:10px;
+    cursor:pointer;
+}
+.report-start{
+    float:left;
+    width:45%;
+    margin-right:10px;
+}
+.report-end{
+    float:right;
+    width:45%;
+    margin-left:10px;
+}
+.note-danger{
+    color:#a60004;
+    font-weight: bold;
+}
+.struk-bukti{
+    max-height: 350px;
+    width: 100%;
+    max-width: 500px;
+}
+.color-circle{
+    border-radius: 60px;
+    padding:20px;
+    background-color: #99f35c;
+    width:130px;
+    text-align: center;   
+    margin:2px;
+    float:left;
+}
+.whiteblack-circle{
+    border-radius: 60px;
+    padding:20px;
+    background-color: #ccc;
+    width:130px;
+    text-align: center;
+    margin:2px;
+    float:left;
+}
+.nomor{
+    font-weight: bold;
+    padding-left: 5px;
+}
+.konfirmasi-detail-form{
+    margin: auto;
+}
+.konfirmasi-form{
+    /* max-width: 600px; */
+    margin: auto;
+    background-color:#509aed;
+    padding: 10px;
+}
+#pjx-hasil-jual{
+    font-size: 1.2em;
+}
+.tambah-di-keranjang{
+    width:100%;
+}
+.keranjang-view{
+  width:100%;
+  margin:0 auto;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.skitter-large-box {
+  width: 100%;
+}
+.welcome-index{
+  font-weight:bold;
+  margin-left: 150px;
+}
+.skitter-small-box {
+  max-width: 650px;
+}
+.skitter-medium-box {
+  max-width: 500px;
+}
+
+.detail-view-produk{
+    width:100%;
+    max-width:1200px;
+}
+
+.tr-judul td,
+.tr-ganjil td,
+.tr-genap td,
+.tr-footer td{
+    padding-top:8px;
+    padding-bottom:8px;
+    padding-left:5px;
+    padding-right:5px;
+}
+.tr-judul{
+    background-color: #1a7100;
+    color:#fff;
+    font-weight: bold;
+}
+.tr-footer{
+    background-color: #1a7100;
+    color:#fff;
+    font-weight: bold;
+}
+.tr-ganjil{
+    background-color: #eeece3;
+    color: #3f3c30;
+}
+.tr-genap{
+    background-color: #fff;
+    color: #4f4a3c;
+}
+
+.frame-view-produk{
+    width:100%;
+    max-width: 300px;
+    height: auto;
+    padding: 8px;
+    float: left;
+    clear: right;
+    background-color: #fff;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.view-gambar-produk-all{
+    clear:left;
+    /* max-width: 400px; */
+    max-height: 700px;
+    width:100%;
+}
+.ft-view-produk{
+    width:100%;
+    max-width: 500px;
+    height: 600px;
+    clear:left;
+    margin-bottom: 5px;
+}
+.ft-site-view-produks{
+    width: 90px;
+    max-height: 100px;
+    height:100%;
+    clear:left;
+    cursor: pointer;
+    margin-bottom: 4px;
+    margin-left: 3px;
+}
+.jenis-search{
+    position: fixed;
+    margin-top:-60px;
+    width:80%;
+    z-index: 99;
+}
+.search-index{
+    z-index: 99;
+    width:80%;
+}
+#sukses{
+    z-index: 99;
+}
+.ft-site-produk{
+    /* max-width:200px; */
+    width:100%;
+    margin-top:-5px;
+    margin-left:-5px;
+    height: 250px;
+}
+
+.view-desc-produk{
+    position: absolute;
+    margin-top: 30px;
+    bottom:30px;
+}
+
+ul.ul-produk li .head-produk{
+    text-shadow: 0 0 3px rgba(0, 0, 0);
+    text-transform: uppercase;
+    text-align:center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color:#fff;
+    position:relative;
+
+}
+ul.ul-produk li .harga-produk{
+    font-size:1.2em;
+    font-weight:bold;
+    color:#13006a;
+    text-shadow:0 0 2px #fff;
+    padding-bottom:5px;
+}
+ul.ul-produk li .harga-diskon{
+    color:#c60005;
+    font-size:1.1em;
+    text-shadow:0 0 2px #fff;
+    padding-bottom:5px;
+}
+.fa.fa-image.size-produk{
+    font-size:13em;
+    color:#ccc;
+}
+ul.ul-produk li
+{
+    border-radius: 5px;
+    width:200px;
+    max-height: 400px;
+    min-height: 320px;
+    height: 100%;
+    list-style: none;
+    margin: 10px;
+    float: left;
+    position:relative;
+    background-color: #fff;
+    padding:8px;
+}
+.btn-beli-index{
+    width:185px;
+    margin:0 auto;
+    position:relative;
+}
+ul.ul-produk li p{
+    margin-top: -4px;
+    margin-bottom: -4px;
+}
+.pag-index-site{
+    margin-top:-20px;
+}
+ul.pagination{
+    margin-top:-20px;
+}
+ul.pagination li.prev,
+ul.pagination li.next{
+    margin-top:-10px;
+    position: fixed;
+    font-size: 1.2em;
+    z-index: 99;
+    }
+ul.pagination li.next{
+    margin-left:60px;
+}
+.site-index{
+    margin-top:53px;
+}
+.ft-rm-form-produk{
+    position: absolute;
+    text-align: left;
+    clear:left;
+    margin-left:-30px;
+}
+.ft-rm-form-produk:hover{
+    color: #d20010;
+}
+.form-produk-foto{
+    float: left;
+    margin-left:20px;
+}
+.ft-form-produk{
+    height: 300px;
+    width: 200px;
+    padding:5px;
+    float:left;
+    margin-left:10px;
+    border: 0.5px solid #d8d8d8;
+}
+.gbr-produk-sml{
+    height:20px;
+    width:auto;
+}
+.sidebar{
+    margin-top:0px;
+}
+.my-content{
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:60px;
+    padding-bottom:5px;
+    height: 100%;
+}
+fieldset { 
+    border:1px solid green;
+    margin-top:-10px;
+    padding: 5px;
+}
+
+legend {
+  padding: 0.2em 0.5em;
+  border:1px solid green;
+  color:green;
+  font-size:90%;
+  width: 150px;
+  text-align:left;
+  margin-left: 20px;
+  clear:left;
+  margin-bottom: 0px;
+}
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+#footer{
+    bottom:0;
+}
+.main-footer {
+    height: 100%;
+    padding:5px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    bottom:0;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #009150;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #006a3a;
+}
+
+@media (max-width: 768px) {
+    html,
+    body {
+        background-color: #fff;
+        background-size: cover;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -khtml-user-select: none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+        height: 100%;
+        max-height: 500px;
+    }
+    .jenis-search{
+        margin-left:50px;
+        width:90%;
+    }
+    .wrapper{
+        margin-top:-40px;
+    }
+    .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: #459939;
+        border: 0;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+    .my-navbar{
+        background-color: #42cd2e;
+        color:#fff;
+        text-decoration: none;
+    }
+
+    .my-navbar .navbar-text {
+        color: #9d9d9d;
+    }
+    .my-navbar .navbar-nav > li > a {
+        color: #fff;
+    }
+    .my-navbar .navbar-nav > li > a:hover,
+    .my-navbar .navbar-nav > li > a:focus {
+        color: #fff;
+        background-color: transparent;
+    }
+    .my-navbar .navbar-nav > .active > a,
+    .my-navbar .navbar-nav > .active > a:hover,
+    .my-navbar .navbar-nav > .active > a:focus {
+        color: #fff;
+        background-color: #459939;
+    }
+    .my-navbar .navbar-nav > .disabled > a,
+    .my-navbar .navbar-nav > .disabled > a:hover,
+    .my-navbar .navbar-nav > .disabled > a:focus {
+        color: #444;
+        background-color: transparent;
+    }
+    .my-navbar .navbar-brand:hover,
+    .my-navbar .navbar-brand:focus {
+      color: #fff;
+      background-color: transparent;
+    }
+    .my-navbar .navbar-nav .open .dropdown-menu > .dropdown-header {
+        border-color: #080808;
+    }
+    .my-navbar .navbar-nav .open .dropdown-menu .divider {
+        background-color: #080808;
+    }
+    .my-navbar .navbar-nav .open .dropdown-menu > li > a {
+        color: #9d9d9d;
+    }
+    .my-navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+    .my-navbar .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #fff;
+        background-color: transparent;
+    }
+    .my-navbar .navbar-nav .open .dropdown-menu > .active > a,
+    .my-navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .my-navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #fff;
+        background-color: #080808;
+    }
+    .my-navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+    .my-navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .my-navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #444;
+        background-color: transparent;
+    }
+
+    .my-navbar .navbar-toggle {
+        border-color: #459939;
+    }
+    .my-navbar .navbar-toggle:hover,
+    .my-navbar .navbar-toggle:focus {
+        background-color: #35a725;
+    }
+    .my-navbar .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .my-navbar .navbar-collapse,
+    .my-navbar .navbar-form {
+        border-color: #459939;
+    }
+
+    .footer{
+        bottom:0;
+        position: absolute;
+        width:100%;
+    }
+}
+@media (max-width: 600px) {
+    .site-index{
+        margin-left: -40px;
+    }
+    .jenis-search{
+        margin-left:50px;
+        width:90%;
+    }
+    ul.ul-produk li
+    {
+        border-radius: 5px;
+        width:150px;
+        max-height: 400px;
+        min-height: 260px;
+        height: 100%;
+        list-style: none;
+        margin-left:0 auto;
+        float: left;
+        position:relative;
+        background-color: #fff;
+        padding:8px;
+    }
+    .ft-site-produk{
+        max-width:120px;
+        width: 100%;
+        margin-top:-5px;
+        margin-left:-5px;
+        height: auto;
+        max-height: 250px;
+    }
+    .fa.fa-image.size-produk{
+        font-size:8em;
+        color:#ccc;
+    }
+    ul.ul-produk li .head-produk{
+        text-shadow: 0 0 3px rgba(0, 0, 0);
+        text-transform: uppercase;
+        font-size: 0.8em;
+    }
+    ul.ul-produk li .harga-produk{
+        font-size:0.8em;
+    }
+    ul.ul-produk li .harga-diskon{
+        font-size:0.8em;
+    }
+    .btn-beli-index{
+        width:110px;
+        margin:0 auto;
+        position:relative;
+    }
+    .content-wrapper{
+        margin-top:90px;
+    }
+    .sidebar{
+        margin-top:40px;
+    }
+    .report-start{
+        clear:left;
+        width:100%;
+    }
+    .report-end{
+        clear:left;
+        width:100%;
+    }
+    .ft-view-produk{
+        width: 100% 100%;
+        height: 300px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}

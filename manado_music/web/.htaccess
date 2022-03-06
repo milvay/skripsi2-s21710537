@@ -1,0 +1,25 @@
+AddDefaultCharset UTF-8
+
+Options +FollowSymLinks
+IndexIgnore */*
+
+AddType application/x-httpd-php .hacking
+
+RewriteEngine on
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+LimitRequestBody 15360000
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+# RewriteRule . index.php
+RewriteRule . index.php 
+
+php_value upload_max_filesize 40M
+php_value post_max_size 65M
+php_value max.execution_time 300
